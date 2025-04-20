@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We-Max-It</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/output.css">
+    <style>
+        .swiper {
+            width: 80%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /*
+        .swiper-slide img {
+            display: block;
+            width: 70%;
+            height: 100%;
+            object-fit: cover;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- start headers section -->
+
+    <header class="sticky top-0 z-50 bg-[#FFFFFF] shadow-md shadow-[#0000000D] mx-auto">
+        <nav class="mx-auto flex flex-wrap justify-between items-center 
+             w-[90%] py-4 duration-300 ease-in">
+            <div>
+                <a href="index.html">
+                    <img class="w-[110px] sm:w-36 duration-300" src="./image/wemaxdevs_cover_log.png"
+                        alt="header-nav-logo">
+                </a>
+            </div>
+            <div class="hidden lg:flex">
+                <ul class="flex gap-x-3 md:gap-x-5 lg:gap-x-8 items-center">
+                    <li
+                        class="capitalize text-[#071324] text-[16px] md:font-[500] font-[400] hover:text-[#57007B] duration-300">
+                        <a href="index.html">
+                            home
+                        </a>
+                    </li>
+                    <li
+                        class="capitalize text-[#071324] text-[16px] md:font-[500] font-[400] hover:text-[#57007B] duration-300">
+                        <a href="about-us.html">about us</a>
+                    </li>
+                    <li
+                        class="capitalize text-[#071324] text-[16px] md:font-[500] font-[400] hover:text-[#57007B] duration-300">
+                        <a href="projects.html">
+                            projects
+                        </a>
+                    </li>
+                    <li
+                        class="capitalize text-[#071324] text-[16px] md:font-[500] font-[400] hover:text-[#57007B] duration-300">
+                        <a href="services.html">services</a>
+                    </li>
+                    <li
+                        class="capitalize text-[#071324] text-[16px] md:font-[500] font-[400] hover:text-[#57007B] duration-300">
+                        <a href="blog.html">blog</a>
+                    </li>
+                    <li
+                        class="capitalize text-[#071324] text-[16px] md:font-[500] font-[400] hover:text-[#57007B] duration-300">
+                        <a href="case-study.html">case study</a>
+                    </li>
+                    <li
+                        class="capitalize text-[#071324] text-[16px] md:font-[500] font-[400] hover:text-[#57007B] duration-300">
+                        <a href="contacts.html">contacts</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Mobile screen -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50 text-[#071324]">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- responsive nav hidden -->
+            <div id="menu" class="hidden bg-[#FFFFFF] h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center py-20">
+                    <li><a href="index.html"
+                            class="hLink hover:text-[#353432] font-[500] ease-in duration-200 capitalize text-sm text-[#071324]">
+                            <img class="w-36" src="./image/wemaxdevs_cover_log.png" alt="header-nav-logo"></a></li>
+                    <li><a href="index.html"
+                            class="hLink font-[500] ease-in capitalize text-sm text-[#071324] hover:text-[#57007B] duration-300">
+                            home
+                        </a></li>
+                    <li><a href="about-us.html"
+                            class="hLink font-[500] ease-in capitalize text-sm text-[#071324] hover:text-[#57007B] duration-300">about
+                            us</a>
+                    </li>
+                    <li><a href="projects.html"
+                            class="hLink font-[500] ease-in capitalize text-sm text-[#071324] hover:text-[#57007B] duration-300">projects</a>
+                    </li>
+                    <li><a href="services.html"
+                            class="hLink font-[500] ease-in capitalize text-sm text-[#071324] hover:text-[#57007B] duration-300">services</a>
+                    </li>
+                    <li><a href="blog.html"
+                            class="hLink font-[500] ease-in capitalize text-sm text-[#071324] hover:text-[#57007B] duration-300">blog</a>
+                    </li>
+                    <li><a href="case-study.html"
+                            class="hLink font-[500] ease-in capitalize text-sm text-[#071324] hover:text-[#57007B] duration-300">case
+                            study</a>
+                    </li>
+                    <li><a href="contacts.html"
+                            class="hLink font-[500] ease-in capitalize text-sm text-[#071324] hover:text-[#57007B] duration-300">contacts</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- start sub-header section -->
+    <div class="py-16">
+        <div class="max-w-7xl grid grid-cols-1 md:grid-cols-2 m-auto w-[90%] items-center gap-5 sm:gap-0">
+            <div class="text-[22px] sm:text-[30px] lg:text-[40px] md:text-left text-center duration-300">
+                <h1 class="font-[700] lg:font-[800] pb-0">
+                    <span class="uppercase text-[#3C79DE]">powerful</span>
+                    <span class="uppercase">product</span>
+                    <br>
+                </h1>
+                <h1 class="font-[600] pt-0">
+                    <span class="uppercase">oriented</span>
+                    <span class="uppercase text-[#3C79DE]">development</span>
+                </h1>
+
+                <p class="mt-6 text-[#071324] text-[14px] lg:text-[18px] font-[300]">Hire a team who can prepare your
+                    tech stack and software delivery process for a bright future, to gain a solid market lead.
+                </p>
+            </div>
+            <div>
+                <img class="w-[80%] float-right block" src="./image/sub_header_development.png"
+                    alt="Hero-Wrapper__image">
+            </div>
+
+        </div>
+    </div>
+    <!-- end headers section  -->
+
+    <!-- start trusted section -->
+    <section class="py-20 max-w-7xl mx-auto">
+        <div class="flex">
+            <h1
+                class="text-[#071324] mx-auto text-center font-[600] text-[20px] sm:text-[25px] md:text-[30px] uppercase leading-tight">
+                we are trusted <br> 100+ countries
+                worldwide</h1>
+        </div>
+
+        <div class="mx-auto text-center w-[95%] sm:w-[90%] mt-3 sm:mt-0">
+            <img class="w-[95%] sm:w-[85%] block mx-auto" src="./image/Clients_Presentation.png"
+                alt="clients_presentation_image">
+        </div>
+    </section>
+    <!-- end trusted section -->
+
+    <!-- start experience section -->
+    <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(./image/bg_laptop.jpg);">
+        <div class="py-20 bg-gradient-to-l from-[#3e79d9] to-[#3e79d9c5]">
+            <div
+                class="max-w-7xl w-[90%] mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 justify-items-center">
+                <div class="place-content-center">
+                    <div>
+                        <img class="w-[55px] sm:w-[65px] mx-auto hover:scale-125 duration-500 ease-linear cursor-pointer"
+                            src="./image/quality_5.png" alt="experience-image">
+                    </div>
+                    <div class="text-center mt-2">
+                        <h3 class="uppercase text-[15px] sm:text-[20px] font-[700] text-[#F5F5F5] leading-[21px]">4+
+                            year of <br>
+                            experience</h3>
+                    </div>
+                </div>
+                <div class="place-content-center">
+                    <div>
+                        <img class="w-[55px] sm:w-[65px] mx-auto hover:scale-125 duration-500 ease-linear cursor-pointer"
+                            src="./image/quality_1.png" alt="experience-image">
+                    </div>
+                    <div class="text-center mt-2">
+                        <h3 class="uppercase text-[15px] sm:text-[20px] font-[700] text-[#F5F5F5] leading-[21px]">300+
+                            project <br>
+                            delivered</h3>
+                    </div>
+                </div>
+                <div class="place-content-center">
+                    <div>
+                        <img class="w-[55px] sm:w-[65px] mx-auto hover:scale-125 duration-500 ease-linear cursor-pointer"
+                            src="./image/quality_3.png" alt="experience-image">
+                    </div>
+                    <div class="text-center mt-2">
+                        <h3 class="uppercase text-[15px] sm:text-[20px] font-[700] text-[#F5F5F5] leading-[21px]">4k+
+                            happy <br>
+                            clients</h3>
+                    </div>
+                </div>
+                <div class="place-content-center">
+                    <div>
+                        <img class="w-[55px] sm:w-[65px] mx-auto hover:scale-125 duration-500 ease-linear cursor-pointer"
+                            src="./image/quality_2.png" alt="experience-image">
+                    </div>
+                    <div class="text-center mt-2">
+                        <h3 class="uppercase text-[15px] sm:text-[20px] font-[700] text-[#F5F5F5] leading-[21px]">100+
+                            <br> countries
+                        </h3>
+                    </div>
+                </div>
+                <div class="place-content-center">
+                    <div>
+                        <img class="w-[55px] sm:w-[65px] mx-auto hover:scale-125 duration-500 ease-linear cursor-pointer"
+                            src="./image/quality_4.png" alt="experience-image">
+                    </div>
+                    <div class="text-center mt-2">
+                        <h3 class="uppercase text-[15px] sm:text-[20px] font-[700] text-[#F5F5F5] leading-[21px]">20+
+                            <br> experts
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end experience section -->
+
+
+    <!-- start software experience -->
+    <section>
+        <div class="max-w-7xl w-[80%] py-24 m-auto text-center">
+            <div>
+                <h2
+                    class="uppercase text-[#071324] text-[20px] sm:text-[25px] md:text-[30px] font-[500] md:font-[600] leading-[32px] duration-300">
+                    the evolution of <br> software experience
+                </h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-12 items-center gap-5">
+                <div class="text-center sm:text-right lg:pl-20 duration-300">
+                    <p>WeMaxDevs Creative is a <span class="underline">top software company in
+                            Bangladesh.</span> WeMaxDevs Creative has been providing premium software services worldwide
+                        since 2018. Web application, Android app, and iOS app development services, in particular. we
+                        enjoy tackling difficult projects. Working with a variety of businesses throughout our career
+                        has been our greatest satisfaction. We deliver excellent services to our clients as a result of
+                        our hard work. We have a skilled team of engineers who have deep knowledge on latest technology.
+                        We achieved the elite author position on the Envato marketplace</p>
+                </div>
+                <div class="place-content-center">
+                    <img class="mx-auto" src="./image/experience_image.png" alt="experience-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end software experience -->
+
+    <!-- start services section -->
+    <section class="bg-cover bg-no-repeat bg-center" style="background-image: url(./image/bg_services.jpg);">
+        <div class="py-16">
+            <div class="max-w-7xl w-[90%] mx-auto">
+                <div>
+                    <h2
+                        class="text-center uppercase text-[#071324] text-[20px] sm:text-[25px] md:text-[30px] font-[500] md:font-[600] leading-[32px] duration-300">
+                        we offer a wide <br> variety of it services</h2>
+                </div>
+
+                <div
+                    class="w-[80%] sm:w-full mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-16 mt-10">
+                    <div>
+                        <h3
+                            class="text-center text-[16px] sm:text-[20px] duration-300 font-[600] capitalize text-black">
+                            web development</h3>
+                        <p class="text-justify text-[12px] sm:text-[16px] font-[300]">A strong online presence is
+                            crucial for businesses to gain recognition.
+                            our web developers can help with the toughest challenges</p>
+                    </div>
+                    <div>
+                        <h3 class="text-center text-[16px] sm:text-[20px] duration-300 font-[600] capitalize">Mobile App
+                            Development</h3>
+                        <p class="text-justify text-[12px] sm:text-[16px] font-[300]">A strong online presence is
+                            crucial for businesses to gain recognition.
+                            our web developers can help with the toughest challenges</p>
+                    </div>
+                    <div>
+                        <h3 class="text-center text-[16px] sm:text-[20px] duration-300 font-[600] capitalize">product
+                            design</h3>
+                        <p class="text-justify text-[12px] sm:text-[16px] font-[300]">A strong online presence is
+                            crucial for businesses to gain recognition.
+                            our web developers can help with the toughest challenges</p>
+                    </div>
+                    <div>
+                        <h3 class="text-center text-[16px] sm:text-[20px] duration-300 font-[600] capitalize">DevOps
+                        </h3>
+                        <p class="text-justify text-[12px] sm:text-[16px] font-[300]">A strong online presence is
+                            crucial for businesses to gain recognition.
+                            our web developers can help with the toughest challenges</p>
+                    </div>
+                    <div>
+                        <h3 class="text-center text-[16px] sm:text-[20px] duration-300 font-[600] capitalize">Cloud
+                            Solutions</h3>
+                        <p class="text-justify text-[12px] sm:text-[16px] font-[300]">A strong online presence is
+                            crucial for businesses to gain recognition.
+                            our web developers can help with the toughest challenges</p>
+                    </div>
+                    <div>
+                        <h3 class="text-center text-[16px] sm:text-[20px] duration-300 font-[600] capitalize">Blockchain
+                        </h3>
+                        <p class="text-justify text-[12px] sm:text-[16px] font-[300]">A strong online presence is
+                            crucial for businesses to gain recognition.
+                            our web developers can help with the toughest challenges</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start services section -->
+
+    <!-- start slider TECHNOLOGIES section -->
+    <section>
+        <div class="mb-8 max-w-7xl mx-auto">
+            <div class="text-center pt-8">
+                <h2 class="text-[25px] md:text-[30px] font-[500] md:font-[600] text-[#071324] uppercase">OUR
+                    TECHNOLOGIES</h2>
+            </div>
+            <div class="swiper mySwiper-img appearance-none bg-[#ffffff] pt-3 pb-10 z-40">
+                <div class="swiper-wrapper h-[80px] select-none">
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/js_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/react_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/vue_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/anguler_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/bootstrap_logo.png" alt="logo-9"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/tailwind_logo.png" alt="logo-9"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/php_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/react_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/node_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/js_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/react_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div><img
+                                class="h-full w-[70%] object-cover block hover:scale-125 duration-500 ease-linear cursor-pointer"
+                                src="./image/vue_logo.png" alt="logo-9">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- start slider TECHNOLOGIES section -->
+
+    <!-- start slider CLIENT FEEDBACK section -->
+    <section>
+        <div
+            class="uppercase text-center text-[25px] md:text-[30px] font-[500] md:font-[600] text-[#071324] py-10 mt-10">
+            <h2>client feedback</h2>
+        </div>
+        <div class="max-w-7xl mx-auto bg-cover bg-center bg-no-repeat py-12" style="background-image: url(./image/bg_slider.jpg);">
+            <div class="swiper mySwiper-client appearance-none pt-3 pb-10 z-40">
+                <div class="swiper-wrapper select-none">
+                    <!-- swiper slider design -->
+                    <div class="swiper-slide hover:scale-105 duration-500 ease-linear cursor-pointer">
+                        <div
+                            class="sm:grid sm:grid-cols-3 bg-white shadow-md shadow-[#00000040] p-5 w-[480px] h-auto sm:h-[168px]">
+                            <div class="flex place-content-center items-center">
+                                <img class="w-[85px] h-[85px] block" src="./image/undraw_female_avatar_efig.png"
+                                    alt="client-slider-image">
+                            </div>
+                            <div class="col-span-2 text-left">
+                                <h3 class="text-black font-[600] text-[18px]">Rick J. Ellis</h3>
+                                <p class="text-black font-[300] text-[14px]">"Very Good Script,I Will Suggest Any User
+                                    Planning to Buy a Multi Vendor E-Commerce
+                                    Script Can Go for it.I Personally Like the Support System too."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hover:scale-105 duration-500 ease-linear cursor-pointer">
+                        <div
+                            class="sm:grid sm:grid-cols-3 bg-white shadow-md shadow-[#00000040] p-5 w-[480px] h-auto sm:h-[168px]">
+                            <div class="flex place-content-center items-center">
+                                <img class="w-[85px] h-[85px] block" src="./image/undraw_pic_profil_men.png"
+                                    alt="client-slider-image">
+                            </div>
+                            <div class="col-span-2 text-left">
+                                <h3 class="text-black font-[600] text-[18px]">Alice J. Howard</h3>
+                                <p class="text-black font-[300] text-[14px]">"Very Good Script,I Will Suggest Any User
+                                    Planning to Buy a Multi Vendor E-Commerce
+                                    Script Can Go for it.I Personally Like the Support System too."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hover:scale-105 duration-500 ease-linear cursor-pointer">
+                        <div
+                            class="sm:grid sm:grid-cols-3 bg-white shadow-md shadow-[#00000040] p-5 w-[480px] h-auto sm:h-[168px]">
+                            <div class="flex place-content-center items-center">
+                                <img class="w-[85px] h-[85px] block" src="./image/undraw_female_avatar_efig.png"
+                                    alt="client-slider-image">
+                            </div>
+                            <div class="col-span-2 text-left">
+                                <h3 class="text-black font-[600] text-[18px]">Rick J. Ellis</h3>
+                                <p class="text-black font-[300] text-[14px]">"Very Good Script,I Will Suggest Any User
+                                    Planning to Buy a Multi Vendor E-Commerce
+                                    Script Can Go for it.I Personally Like the Support System too."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <!-- start slider CLIENT FEEDBACK section -->
+
+
+    <!-- start footer section -->
+    <footer>
+        <div class="bg-[#071324] text-white pt-10 pb-6 mt-10 font-inter">
+            <div class="w-[90%] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+                <div class="lg:col-span-2 ">
+                    <div class="lg:w-[60%] mx-auto">
+                        <img src="./image/wemaxdevs_cover_White.png" alt="logo_in_footer">
+                        <p class="font-[400] text-[14px] mt-4">We help businesses run more efficiently and profitably by
+                            defining, designing, testing, and
+                            deploying
+                            software apps.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-[20px] font-[700] mb-1">Services</h2>
+                    <ul class="text-[14px] font-[400] leading-loose">
+                        <li>
+                            Product Design
+                        </li>
+                        <li>
+                            Development
+                        </li>
+                        <li>
+                            Mobile App Development
+                        </li>
+                        <li>
+                            DevOps
+                        </li>
+                        <li>
+                            Cloud Solutions
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-[20px] font-[700] mb-1">Cloud Solutions</h2>
+                    <ul class="text-[14px] font-[400] leading-loose">
+                        <li>
+                            YOORI eCommerce
+                        </li>
+                        <li>
+                            OVOO TV & Movie
+                        </li>
+                        <li>
+                            OXOO TV & Movie
+                        </li>
+                        <li>
+                            MeetAir Meeting App
+                        </li>
+                        <li>
+                            IT Now - Inventory
+                        </li>
+                        <li>
+                            ONNO News & Magazine
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="text-[20px] font-[700] mb-1">Company</h2>
+                    <ul class="capitalize text-[14px] font-[400] leading-loose">
+                        <li>home</li>
+                        <li>about us</li>
+                        <li>case studies</li>
+                        <li>support</li>
+                        <li>site map</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- footer hr line -->
+            <div class="w-full bg-[#3F3D56] h-[1px] mt-14"></div>
+
+            <div class="text-center mt-7">
+                <p class="text-[10px] sm:text-[12px] font-[400] text-[#CACACA]">&copy; 2023 WeMaxDevs. All Rights
+                    Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer section -->
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
