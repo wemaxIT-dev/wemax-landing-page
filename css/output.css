@@ -2022,6 +2022,10 @@ body {
   .md\:font-\[600\]{
     font-weight: 600;
   }
+
+  .md\:font-\[700\]{
+    font-weight: 700;
+  }
 }
 
 @media (min-width: 1024px){
